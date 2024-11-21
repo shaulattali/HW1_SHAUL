@@ -9,7 +9,7 @@ void push(Stack* s, unsigned int element)
 {
 	IntNode* newNode = new IntNode();
 	newNode->value = element;
-	newNode->next = nullptr;
+	newNode->next = NULL;
 	
 	s->top = addToHead(s->top, newNode);
 	s->_count++;
@@ -35,7 +35,7 @@ int pop(Stack* s)
 void initStack(Stack* s)
 {
 	s->_count = 0;
-	s->top = nullptr;
+	s->top = NULL;
 }
 
 // This Function Clean The Queue
@@ -44,7 +44,7 @@ void initStack(Stack* s)
 void cleanStack(Stack* s)
 {
 	//While loop until the end
-	while (s->top != nullptr)
+	while (s->top != NULL)
 	{
 		s->top = removeFromEnd(s->top);
 	}
